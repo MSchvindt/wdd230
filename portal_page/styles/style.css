@@ -78,11 +78,10 @@ main p{
     text-align: center;
     
 }
-footer{
+
+footer {
     display: grid ;
     grid-template-rows: 5% 1fr 5%;
-}
-footer {
     grid-row: 1/2;
     color: white;
     text-decoration: none;
