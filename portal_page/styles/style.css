@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed&family=Ubuntu:wght@300&display=swap');
+
 #content {
     max-width: 1600px; 
     margin: 0 auto;
@@ -19,7 +21,7 @@ header h1{
     padding-left: 250px;
     padding-right: 50px;
     color: white;
-    font-family: 'BIZ UDPGothic', sans-serif, 'Dosis';
+    font-family: 'Open Sans','Roboto Condensed','Ubuntu';
     font-size: 5em;
     text-shadow: 2px 2px 5px #363733;
     text-align: center;
@@ -52,7 +54,7 @@ main h2{
     grid-column: 2/3;
     grid-row: 1/2;
     color: black;
-    font-family: 'BIZ UDPGothic', sans-serif, 'Dosis';
+    font-family: 'Open Sans','Roboto Condensed','Ubuntu';
     font-size: 4em;
     text-shadow: 2px 2px 5px #363733;
     text-align: left;
@@ -73,7 +75,7 @@ main p{
     grid-column: 2/3;
     grid-row: 3/4;
     color: black;
-    font-family: 'BIZ UDPGothic', sans-serif, 'Dosis';
+    font-family: 'Open Sans','Roboto Condensed','Ubuntu';
     font-size: 2em;
     text-align: center;
     
@@ -85,7 +87,7 @@ footer {
     grid-row: 1/2;
     color: white;
     text-decoration: none;
-    font-family: 'BIZ UDPGothic', sans-serif, 'Dosis';
+    font-family: 'Open Sans','Roboto Condensed','Ubuntu';
     background-color: #0c629c; 
     box-shadow: 5px 5px 10px #363733;
     text-align: center;
