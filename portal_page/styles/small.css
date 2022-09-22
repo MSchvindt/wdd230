@@ -18,7 +18,7 @@ header h1{
     background-color: #0c629c; 
     box-shadow: 5px 5px 10px #363733;
     padding: 90px;
-    padding-left: 250px;
+    padding-left: 350px;
     padding-right: 50px;
     color: white;
     font-family: 'Open Sans','Roboto Condensed','Ubuntu';
@@ -34,8 +34,8 @@ header h1{
     grid-row: 1/2;
     box-sizing: border-box;
     z-index: 1;
-    float: left;
-    width: 40%;
+    float: center;
+    min-width: 300px;
     margin: 40px;
     margin-top: 60px;
     margin-bottom: 60px;
