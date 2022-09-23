@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Condensed&family=Ubuntu:wght@300&display=swap');
+
+#content {
+    max-width: 1000px; 
+    margin: 0 auto;
+}
+Header{
+    background-color: #0c629c;
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Open Sans','Roboto Condensed','Ubuntu';
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 10px #363733;
+}
+main{
+    display: grid;
+    grid-template-columns: 2% 96% 2%;
+    grid-template-rows: 1300px 1350px 1300px;
+    
+}
+
+
+#contrast{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: rgb(220, 220, 196);
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    border: 2px solid #201e31;
+    border-top-right-radius:10px;
+    border-top-left-radius: 10px;
+}
+#repetition{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: rgb(220, 220, 196);
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    border: 2px solid #201e31;
+    border-top-right-radius:10px;
+    border-top-left-radius: 10px;
+}
+#hierarchy{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-color: rgb(220, 220, 196);
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    border: 2px solid #201e31;
+    border-top-right-radius:10px;
+    border-top-left-radius: 10px;
+}
+#contrast h1{
+    background-color: #201e31;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    border-top-right-radius:10px;
+    border-top-left-radius: 10px;
+}
+#repetition h1{
+    background-color: #201e31;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    border-top-right-radius:10px ;
+    border-top-left-radius: 10px;
+}
+#hierarchy h1{
+    background-color: #201e31;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    border-top-right-radius:10px ;
+    border-top-left-radius: 10px;
+}
+#contrast h2{
+    padding: 10px;
+    font-size: 1.8em;
+    color: #201e31;
+}
+#repetition h2{
+    padding: 10px;
+    font-size: 1.8em;
+    color: #201e31;
+}
+    
+#hierarchy h2{
+    padding: 10px;
+    font-size: 1.8em;
+    color: #201e31;
+}
+
+#contrast a{
+    padding: 10px;
+    font-size: 1.4em;
+}    
+#repetition a{
+    padding: 10px;
+    font-size: 1.4em;
+}
+#hierarchy a{
+    padding: 10px;
+    font-size: 1.4em;
+}
+
+.contrast{
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.repetition{
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.hierarchy{
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#contrast p{
+    padding: 10px;
+    font-size: 1.1em;
+}    
+#repetition p{
+    padding: 10px;
+    font-size: 1.1em;
+}
+#hierarchy p{
+    padding: 10px;
+    font-size: 1.1em;
+}
+
+
+footer {
+    display: grid ;
+    grid-template-rows: 5% 1fr 5%;
+    grid-row: 1/2;
+    color: white;
+    text-decoration: none;
+    font-family: 'Open Sans','Roboto Condensed','Ubuntu';
+    background-color: #0c629c; 
+    box-shadow: 5px 5px 10px #363733;
+    text-align: center;
+    font-size: 1.2em;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
