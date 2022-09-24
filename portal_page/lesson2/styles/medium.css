@@ -20,7 +20,7 @@
     main{
         display: grid;
         grid-template-columns: 3% 46% 2% 46% 3%;
-        grid-template-rows: 1300px 2100px;
+        grid-template-rows: 1500px 2350px;
         
     }
     

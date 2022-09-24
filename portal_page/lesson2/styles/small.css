@@ -20,7 +20,7 @@ Header{
 main{
     display: grid;
     grid-template-columns: 2% 96% 2%;
-    grid-template-rows: 1300px 1350px 1300px;
+    grid-template-rows: 1500px 1450px 1500px;
     
 }
 
