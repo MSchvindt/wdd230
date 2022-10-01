@@ -2,7 +2,7 @@
 header{
     background-color: #0c629c;
     color: white;
-    font-size: 1.3em;
+    font-size: 1em;
     text-align: center;
     font-family: 'Open Sans','Roboto Condensed','Ubuntu';
     margin-left: 10px;
@@ -16,6 +16,9 @@ header{
 }    
 .logo{
     width: 150px;
+    width: 150px;
+    z-index: 1;
+    float: left;
 }
 header,
 main,
@@ -67,4 +70,191 @@ footer {
     padding-bottom: 25px;
     padding-left: 10px;
     padding-right: 10px;
+}
+#main-index{
+    display: grid;
+    grid-template-columns: 2% 96% 2%;
+    grid-template-rows: 250px 250px ;
+    
+}
+#purpose{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: rgb(220, 220, 196);
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    border: 2px solid #201e31;
+    border-radius:10px;
+    
+}
+#purpose h2{
+    background-color: #201e31;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    margin: 10px;
+    border-radius:10px;
+    
+}
+#purpose p{
+    font-size: 1.2em;
+    margin: 10px;
+}
+#domine{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: rgb(220, 220, 196);
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    border: 2px solid #201e31;
+    border-radius:10px;
+    
+}
+#domine h2{
+    background-color: #201e31;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    margin: 10px;
+    border-radius:10px;
+    
+}
+#domine p{
+    font-size: 1.2em;
+    margin: 10px;
+}
+/* page target */
+#main-target{
+    display: grid;
+    grid-template-columns: 2% 96% 2%;
+    grid-template-rows: 350px 250px 350px;
+}
+#target{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: rgb(220, 220, 196);
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    border: 2px solid #201e31;
+    border-radius:10px;
+}
+#target h1{
+    background-color: #201e31;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    margin: 10px;
+    border-radius:10px;
+}
+#target p{
+    font-size: 1.2em;
+    margin: 10px;
+}
+#personas{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-color: rgb(220, 220, 196);
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    border: 2px solid #201e31;
+    border-radius:10px;
+}
+#personas h2{
+    background-color: #201e31;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    margin: 10px;
+    border-radius:10px;
+}
+#personas h3{
+    font-size: 1.2em;
+    margin: 10px;
+}
+#scenarios{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    background-color: rgb(220, 220, 196);
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    border: 2px solid #201e31;
+    border-radius:10px;
+}
+#scenarios h2{
+    background-color: #201e31;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    margin: 10px;
+    border-radius:10px;
+}
+#target ul{
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+/*page color*/
+
+#main-color{
+    display: grid;
+    grid-template-columns: 2% 96% 2%;
+    grid-template-rows: 350px;
+}
+#palette{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: rgb(220, 220, 196);
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    border: 2px solid #201e31;
+    border-radius:10px;
+}
+#palette h2{
+    background-color: #201e31;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    margin: 10px;
+    border-radius:10px;
+}
+#palette a{
+    margin: 10px;
+}
+#palette p{
+    font-size: 1.2em;
+    margin: 10px;
+}
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+/*typography*/
+#main-typo{
+    display: grid;
+    grid-template-columns: 2% 96% 2%;
+    grid-template-rows: 300px;
+}
+#typo{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: rgb(220, 220, 196);
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    border: 2px solid #201e31;
+    border-radius:10px;
+}
+#typo h2{
+    background-color: #201e31;
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    margin: 10px;
+    border-radius:10px;
+}
+#typo h3{
+    font-size: 1.2em;
+    margin: 10px;
 }
