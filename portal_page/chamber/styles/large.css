@@ -1,0 +1,175 @@
+@media only screen and (min-width: 62em) {
+    nav ul li a{
+        padding: .5rem 1rem;        
+    }
+
+    #content{
+        max-width: 1600px; 
+        margin: 0 auto;
+    }
+    header{
+        background-color: rgb(140, 188, 129);
+        border-radius: 20px;
+        margin: 10px;
+    }
+    
+    .icon{
+        width: 110px;
+        border-radius: 60px;
+        
+    }
+    .social-icon{
+        float:right;
+    }
+    .social {
+        height: 100px;
+        align-content: right;
+        
+    }
+    #currentdate1{
+        
+        float:center;
+        margin-top:30px;
+        margin-left:20px;
+        font-size: 2.5em;
+    }
+    .logo{
+        width: 250px;
+        border-radius: 30px;
+        margin: 20px;
+    }
+    header h1{
+        font-size: 6em;
+        text-align: center;
+        font-family: 'Open Sans','Roboto Condensed','Ubuntu';
+    }
+    header h2{
+        font-size: 5em;
+        text-align: center;
+        font-family: 'Open Sans','Roboto Condensed','Ubuntu';
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 10% 18.5% 3% 37% 3% 18.5% 10%;
+        grid-template-rows: 20% 250px 250px 250px 20%;
+    }
+
+    #hero{
+        grid-column: 4/5;
+        grid-row: 2/4;
+        font-size: 2rem;
+        background-color: rgb(220, 220, 196);
+        margin-bottom: 10px; 
+        border: 2px solid #9c9c9f;
+        padding: 10px;
+    }
+    #event{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        font-size: 2rem;
+        background-color: rgb(220, 220, 196);
+        margin-top: 10px;
+        margin-bottom: 10px; 
+        border: 2px solid #9c9c9f;
+        padding: 10px;
+    }
+    #weather{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        font-size: 2rem;
+        background-color: rgb(220, 220, 196);
+        margin-top: 10px;
+        margin-bottom: 10px; 
+        
+        border: 2px solid #9c9c9f;
+        padding: 10px;
+    }
+    #news{
+        grid-column: 4/5;
+        grid-row: 4/5;
+        font-size: 2rem;
+        background-color: rgb(220, 220, 196);
+        margin-top: 10px;
+        margin-bottom: 10px; 
+        border: 2px solid #9c9c9f;
+        padding: 10px;
+    }
+    #join{
+        grid-column: 2/3;
+        grid-row: 4/5;
+        font-size: 2rem;
+        background-color: rgb(220, 220, 196);
+        margin-top: 10px;
+        margin-bottom: 10px; 
+        border: 2px solid #9c9c9f;
+        padding: 10px;
+    }
+    #spotlight{
+        grid-column: 6/7;
+        grid-row: 2/5;
+        font-size: 2rem;
+        background-color: rgb(220, 220, 196);
+        margin-top: 10px;
+        margin-bottom: 10px; 
+        border: 2px solid #9c9c9f;
+        padding: 10px;
+        padding-top: 10px;
+        display: grid;
+        grid-template-columns: 5% 1fr 5%;
+        grid-template-rows: 5% 1fr 1fr 1fr 5%;
+    }
+    #spotlight #sp1{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin-top: 5px;
+        margin-bottom: 5px; 
+        margin-right: 0px;
+        
+        border: 2px solid #9c9c9f;
+        
+    } 
+    #spotlight #sp2{
+        grid-column: 2/3;
+        grid-row: 3/4;
+        margin-top: 5px;
+        margin-bottom: 5px; 
+        margin-left: 0px;
+        
+        border: 2px solid #9c9c9f;
+        
+    } 
+    #spotlight #sp3{
+        display: flex;
+        grid-column: 2/3;
+        grid-row: 4/5;
+        margin-top: 5px;
+        margin-bottom: 5px; 
+        border: 2px solid #9c9c9f;
+        padding: 10px;        
+    }
+    footer{
+   
+        grid-template-rows: 5% 1fr 5%;
+        border-radius: 20px;
+        color: black;
+        text-decoration: none;
+        font-family: 'Open Sans','Roboto Condensed','Ubuntu';
+        background-color: rgb(140, 188, 129); 
+        box-shadow: 5px 5px 10px #363733;
+        text-align: center;
+        font-size: 2em;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    footer iframe{
+        justify-content: center;
+    }
+    footer .logo_footer{
+        border-radius: 40px;
+    }
+}
