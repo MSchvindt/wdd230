@@ -14,7 +14,7 @@
     }
     
     .icon{
-        width: 110px;
+        width: 90px;
         border-radius: 60px;
         
     }
@@ -31,20 +31,20 @@
         
         margin-top:30px;
         margin-left:20px;
-        font-size: 2.5em;
+        font-size: 2em;
     }
     .logo{
-        width: 250px;
+        width: 200px;
         border-radius: 30px;
         margin: 20px;
     }
     header h1{
-        font-size: 6em;
+        font-size: 4em;
         text-align: center;
         font-family: 'Open Sans','Roboto Condensed','Ubuntu';
     }
     header h2{
-        font-size: 5em;
+        font-size: 3em;
         text-align: center;
         font-family: 'Open Sans','Roboto Condensed','Ubuntu';
     }
