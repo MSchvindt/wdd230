@@ -105,8 +105,8 @@ nav ul.open{
 main{
     display: grid;
     grid-template-columns: 10% 1fr 10%;
-    grid-template-rows: 20% 250px 250px 250px 250px 250px 650px 20%;
-    margin: 50px;
+    grid-template-rows: 5% 250px 250px 250px 250px 250px 650px 20%;
+    margin-bottom: 100px;
 }
 #hero{
     grid-column: 2/3;
@@ -208,7 +208,7 @@ footer{
     padding-right: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 footer iframe{
