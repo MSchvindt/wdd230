@@ -302,3 +302,38 @@ footer .logo_footer{
     width: 240px;
     border-radius: 40px;
 }
+
+.banner {
+    background: #009579;
+    border-radius: 40px;
+  }
+  
+  .banner__content {
+    padding: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+  
+  .banner__text {
+    flex-grow: 1;
+    line-height: 1.4;
+    font-family: "Quicksand", sans-serif;
+    
+  }
+  
+  .banner__close {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .banner__close:hover{
+    background-color: #333;
+    
+  }
+  
+  .banner__text,
+  .banner__close > span {
+    color: #ffffff;
+  }

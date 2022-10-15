@@ -27,3 +27,19 @@ window.onresize = () => {
         mainnav.classList.remove('open');
     }
 };
+
+let currentDate = new Date();
+let weekDay = '';
+weekDay = currentDate.getDay();
+
+function banner(weekDay){
+    if (weekDay === 1 || weekDay === 2){
+        document.getElementsByClassName("banner").style.display = "";
+    } else {
+        document.getElementsByClassName("banner").style.display = "none";
+};
+};
+
+document.querySelector(".banner__close").addEventListener("click", function () {
+    this.closest(".banner").style.display = "none";
+});
