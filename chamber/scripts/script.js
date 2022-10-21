@@ -32,14 +32,16 @@ let currentDate = new Date();
 let weekDay = '';
 weekDay = currentDate.getDay();
 
+const banner_tag = document.getElementById("banner");
+
 function banner(weekDay){
     if (weekDay == 1 || weekDay == 2){
-        document.getElementsByClassName("banner").style.display = "block";
+        banner_tag.style.display = "block";
     } else {
-        document.getElementsByClassName("banner").style.display = "none";
+        banner_tag.style.display = "none";
 }
 }
-
+banner(weekDay);
 document.querySelector(".banner__close").addEventListener("click", function () {
     this.closest(".banner").style.display = "none";
 });
