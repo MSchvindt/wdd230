@@ -55,7 +55,7 @@
     main{
         display: grid;
         grid-template-columns: 10% 18.5% 3% 37% 3% 18.5% 10%;
-        grid-template-rows: 20% 250px 250px 250px 250px 20%;
+        grid-template-rows: 20% 250px 250px 250px 20%;
     }
 
     #hero{
