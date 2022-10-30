@@ -45,3 +45,39 @@ banner(weekDay);
 document.querySelector(".banner__close").addEventListener("click", function () {
     this.closest(".banner").style.display = "none";
 });
+
+
+//variable local storage
+
+//variable fecha
+const time = new Date();
+const timeNumber = time.getTime();
+
+const lsLastVisit = Number(window.localStorage.getItem("today_ls", timeNumber));
+
+if (lsLastVisit == 0) {
+    console.log('first time');
+    document.getElementById("last_visit").textContent = "Welcome, this is your first visit.";
+    
+} else {
+    var convertNumber1 = new Date(lsLastVisit);
+    var convertNumber2 = new Date(timeNumber);
+
+    let frmDate1 = (convertNumber1.getMonth() + 1) + "/" + convertNumber1.getDay() + "/" + convertNumber1.getFullYear();
+    let frmDate2 = (convertNumber2.getMonth() + 1) + "/" + (convertNumber2.getDay()) + "/" + (convertNumber2.getFullYear());
+
+    let day1 = new Date(frmDate1);
+    let day2 = new Date(frmDate2);
+
+    const diffTime = Math.abs(day2 - day1);
+    const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    if (diffDays == 0) {
+        document.getElementById("last_visit").textContent = "Days since last visit: Today";
+    }
+    else{
+        document.getElementById("last_visit").textContent = "Days since last visit: " + diffDays;
+}}
+
+const ls_today = (window.localStorage.setItem("today_ls", timeNumber));
+
+

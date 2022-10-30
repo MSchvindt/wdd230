@@ -66,7 +66,7 @@
     }
 
 
-    main{
+    #chamber_main{
         display: grid;
         grid-template-columns: 10% 43.5% 3% 33.5% 10%;
         grid-template-rows: 20% 250px 250px 250px 250px 250px 250px 20%;
@@ -255,7 +255,7 @@
 #discover_main{
     display: grid;
     grid-template-columns: 10% 1fr 1fr 10%;
-    grid-template-rows: 5% 100px 950px 950px 950px 10%;
+    grid-template-rows: 5% 100px 430px 430px 430px 10%;
 }
 #discover_main h1 {
     grid-column: 2/4;
@@ -286,4 +286,14 @@
 #caminito{
     grid-column: 3/4;
     grid-row: 5/6;
+}
+.img_bsas:hover {
+    box-shadow: 0px 0px 18px 5px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 18px 5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 18px 5px rgba(0, 0, 0, 0.75);
+    width: 350px;
+    
+}
+#discover_main div:hover{
+    font-weight: bold;
 }

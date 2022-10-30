@@ -63,10 +63,10 @@ nav button {
     color: #555
 }
 nav {
-    
+    background-color: #eee;
 	margin: 0 auto;
-    max-width: 750px;
-	background-color: #eee;
+    
+	
 }
 
 nav ul{
@@ -74,6 +74,9 @@ nav ul{
     padding: 0px;
     margin: 20px;
     font-size: 3rem;
+}
+nav ul li{
+    background-color: #eee;
 }
 nav ul li a{
     display: block;
@@ -105,7 +108,7 @@ nav ul.open{
     display: block;
 }
 
-main{
+#chamber_main{
     display: grid;
     grid-template-columns: 10% 1fr 10%;
     grid-template-rows: 5% 250px 250px 250px 250px 250px 650px 250px 20%;
@@ -351,14 +354,27 @@ footer .logo_footer{
 
 /* ------discover------*/
 
+#discover_h1{
+    text-align: center;
+    font-size: 4rem;
+    margin: 40px;
+
+}
 #discover_main{
     display: grid;
+    gap: 20px;
     grid-template-columns: 10% 1fr 10%;
-    grid-template-rows: 5% 100px 950px 950px 950px 950px 950px 950px 10%;
+    grid-template-rows: 5% 100px 430px 430px 430px 430px 430px 430px 10%;
 }
 #discover_main h1 {
     grid-column: 2/3;
     grid-row: 2/3;
+}
+#discover_main div{
+    border: 1px solid grey;
+    border-radius: 5px;
+
+
 }
 
 #obelisco{
@@ -385,4 +401,24 @@ footer .logo_footer{
 #caminito{
     grid-column: 2/3;
     grid-row: 8/9;
+}
+.img_bsas{
+    width: 300px;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.img_h2{
+    text-align: center;
+}
+.img_p{
+    text-align: left;
+    margin: 20px 40px 0 40px;
+}
+#last_visit{
+    grid-column: 2/3;
+    grid-row: 9/10;
+    font-size: 2rem;
 }
