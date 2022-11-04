@@ -56,52 +56,45 @@
             </ul>
         </nav>
     </header>
-    <main id="discover_main">
+    <main id="join_main">
         
-        <h1 id="discover_h1">Discover</h1>
-        <div id="obelisco">
-            <h2 class="img_h2">The obelisk</h2>
+        <h1 style="display:block; text-align:center; font-size: 3rem; margin-top: 80px;">Join the Chamber Application</h1>
+        <form action="thankyou.html" method="get">
+            <fieldset>
+                <legend>Applicant information</legend>
+            <label class="top"> First Name*<input type="text" name="fname" required></label>
+            <label class="top"> Last Name*<input type="text" name="lname" required></label>
+            <label class="top"> Business Position Title<input type="text" name="title" pattern="[a-zA-Z -]{7,0}"></label>
+            <label class="top"> Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            <label class="top"> Phone<input type="tel" name="phone" placeholder="1122334455"></label>
+            <label class="top"> Business name/title*<input type="text" name="bname" required></label>
             
-            <img src=images/discover_img/obelisco.jpg alt="obelisco" loading="lazy"  class="img_bsas">
-            
-            <p class="img_p">The Obelisk of Buenos Aires is a historical monument considered an icon of the Autonomous City of Buenos Aires.</p>
-        </div>
-        <div id="puerto">
-            <h2 class="img_h2">Puerto Madero</h2>
-            
-            <img src=images/discover_img/puerto_madero.jpg alt="puerto madero" loading="lazy" class="img_bsas"> 
-            
-            <p class="img_p">Puerto Madero is even more impressive when night falls, when the lights of the pier and the skyscrapers stand out against the night sky.</p>
-        </div>
-        <div id="teatro"> 
-            <h2 class="img_h2">Colon Theater</h2> 
-            
-            <img src=images/discover_img/teatro_colon.webp alt="teatro colon" loading="lazy" class="img_bsas">
-            
-            <p class="img_p">The first Teatro Colón was the work of the architect Charles Henri Pellegrini and was inaugurated with the opera "La Traviata" by Giuseppe Verdi on April 25, 1857</p>
-        </div>
-        <div id="floralis">
-            <h2 class="img_h2">Floralis Generica</h2>
-            
-            <img src=images/discover_img/floralis_generica.jpg alt="floralis generica" loading="lazy" class="img_bsas">
-            
-            <p class="img_p">The United Nations Plaza is located in the Recoleta neighborhood in the City of Buenos Aires, Argentina. The land of the square is very extensive and has large green areas.</p>
-        </div> 
-        <div id="ateneo"> 
-            <h2 class="img_h2">Bookstore El Ateneo</h2> 
-            
-            <img src=images/discover_img/el_ateneo.webp alt="el ateneo" loading="lazy" class="img_bsas">
-            
-            <p class="img_p">Founded in 1912 by Pedro García, a Spanish immigrant belonging to a family of booksellers, El Ateneo - today extended to the publishing house of the same name - reached the highest level among Latin American bookshops in the 1950s.</p>
-        </div>
-        <div id="caminito"> 
-            <h2 class="img_h2">Caminito</h2> 
-            
-            <img src=images/discover_img/caminito.jpg alt="caminito" loading="lazy" class="img_bsas">
-            
-            <p class="img_p">Caminito is an alley, museum and passageway, of great cultural and tourist value, located in the La Boca neighborhood of the City of Buenos Aires, Argentina.</p>
-        </div>
-        <p id="last_visit"></p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership</legend>
+                <div> Membership Level </div>
+                <label class="sbs"><input type="radio" name="mlevel" value="np">  NP Membership is for non profit organizations and there is no fee.</label>
+                <label class="sbs"><input type="radio" name="mlevel" value="bronze"> Bronze Membership.</label>
+                <label class="sbs"><input type="radio" name="mlevel" value="silver">  Silver Membership</label>
+                <label class="sbs"><input type="radio" name="mlevel" value="gold">  Gold Membership</label>
+                <p>This memberships have increasing costs as well as increased benefits per level like trainings,
+                     advertising (like on the home page spotlights), event discounts, etc.</p>     
+                     <div>  Briefly describe their business. </div>
+                     <label class="message"><textarea name="message" id="message" cols="40" rows="10"></textarea></label>   
+            </fieldset>
+
+            <input type="hidden" id="hidden" name="hidenDate" value="3487">
+
+            <input type="submit" class="submitBtn" value="Join the Chamber">
+                
+                
+                
+        </form>
+    
+
+
+        
     </main>
     <footer>
         <a id="logo_link2" href="index.html">
