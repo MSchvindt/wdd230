@@ -81,3 +81,4 @@ if (lsLastVisit == 0) {
 const ls_today = (window.localStorage.setItem("today_ls", timeNumber));
 
 
+document.getElementById("hidden").textContent = new Date();
