@@ -80,5 +80,5 @@ if (lsLastVisit == 0) {
 
 const ls_today = (window.localStorage.setItem("today_ls", timeNumber));
 
-
+//fecha en campo oculto join
 document.getElementById("hidden").textContent = new Date();
