@@ -85,8 +85,8 @@ main ul{
     color: black;
     font-size: 1.5em;
     text-align: left;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 70px;
+    padding-bottom: 70px;
     box-sizing: border-box;
     border-top: 1px solid #369;
     border-bottom: 3px double #369;
@@ -98,6 +98,7 @@ main p{
     font-family: 'Open Sans','Roboto Condensed','Ubuntu';
     font-size: 1em;
     text-align: center;
+    
     
 }
 
