@@ -81,4 +81,12 @@ if (lsLastVisit == 0) {
 const ls_today = (window.localStorage.setItem("today_ls", timeNumber));
 
 //fecha en campo oculto join
-document.getElementById("hidden").textContent = new Date();
+document.getElementById("hidden").textContent = currentDate;
+
+
+//"Welcome back " + firstName + "! You last visited on <strong>" + lvdate + "</strong>."
+//var firstName = Matias;
+//var lvdate = yesterday;
+
+//var string1 = `Welcome back   ${firstName}  ! You last visited on <strong> ${lvdate}  </strong>.`;
+//console.log(string1);
