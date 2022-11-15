@@ -27,6 +27,9 @@ window.onresize = () => {
         mainnav.classList.remove('open');
     }
 };
+window.onload = function () {
+    data();
+}
 
 let currentDate = new Date();
 let weekDay = '';
@@ -94,49 +97,79 @@ document.getElementById("hidden").textContent = currentDate;
 
 //------------directory-----------------------
 
+function hideImgs() {
+    let imgs = document.getElementsByName('logo_business');
 
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const display = document.querySelector("article");
-
-// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
-
-gridbutton.addEventListener("click", () => {
-    // example using arrow function
-    display.classList.add("grid");
-    display.classList.remove("list");
-});
-
-listbutton.addEventListener("click", showList); // example using defined function
-
-function showList() {
-    display.classList.add("list");
-    display.classList.remove("grid");
+    imgs.forEach(img => {
+        img.style.display = 'none';
+    });
 }
 
-/*const requestPath = '../data.json';
-const cards = document.querySelector('.cards');
+function showImgs() {
+    let imgs = document.getElementsByName('logo_business');
 
-fetch(requestPath)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (jsonObject) {
-        console.table(jsonObject);  // temporary checking for valid response and data parsing
-        const business = jsonObject['business'];
-        business.forEach(displaybusiness);
+    imgs.forEach(img => {
+        img.style.display = 'block';
     });
-*/
+}
 
-fetch('https://mschvindt.github.io/wdd230/chamber/data.json')
-    .then((response) => response.json())
-    .then((json) => {
-        console.log(json);
 
-        json.forEach(element => {
-            displaybusiness(element);
+function showGrid() {
+    var gridbutton = document.getElementById('grid');
+    var listbutton = document.getElementById('list');
+    var display_article = document.getElementById('article');
+
+    display_article.classList.add("grid");
+    display_article.classList.remove("list");
+
+    document.getElementById('currentListType').innerHTML = "Showing GRID formatting";
+    showImgs();
+    change_active(gridbutton);
+}
+
+
+function showList() {
+    var gridbutton = document.getElementById('grid');
+    var listbutton = document.getElementById('list');
+    var display_article = document.getElementById('article');
+
+    display_article.classList.add("list");
+    display_article.classList.remove("grid");
+
+    document.getElementById('currentListType').innerHTML = "Showing LIST formatting";
+    hideImgs();
+
+    change_active(listbutton);
+}
+
+
+
+function change_active(btn) {
+    let buttons = document.getElementsByName('buttons_change_format');
+
+    buttons.forEach(button => {
+        button.classList.remove('active');
+    });
+
+    btn.classList.add('active');
+
+    
+
+}
+getElementByTag
+
+function data() {
+    fetch('https://mschvindt.github.io/wdd230/chamber/data.json')
+        .then((response) => response.json())
+        .then((json) => {
+            console.log(json);
+
+            json.forEach(element => {
+                displaybusiness(element);
+            });
         });
-    });
+}
+
 
 function displaybusiness(business) {
     // Create elements to add to the document
@@ -147,6 +180,7 @@ function displaybusiness(business) {
     let web = document.createElement("p")
     let membership = document.createElement("p")
     let logo = document.createElement('img');
+    logo.setAttribute('name', 'logo_business');
 
     name.textContent = `${business.name}`;
     address.textContent = `Address: ${business.addresses}.`;

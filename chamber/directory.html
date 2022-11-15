@@ -60,14 +60,15 @@
     <main id="main_directory">
 
         <div class="menu_directory">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
+            <button id="grid" class="active" name="buttons_change_format" onclick="showGrid()">Grid</button>
+            <button id="list" name="buttons_change_format" onclick="showList()">List</button>
+            <p id="currentListType">Showing GRID formatting</p>
         </div>
-        <article class="grid">
+        <article class="grid" id="article">
             <div class="cards">
 
             </div>
-        </article>    
+        </article>   
     </main>
     <footer>
         <a id="logo_link2" href="index.html">

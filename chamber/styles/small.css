@@ -583,3 +583,10 @@ section a {
 		display: block;
 	}
 }
+.active {
+    background-color: #00a231;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+    border-radius: 4px;
+}
