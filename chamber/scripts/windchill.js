@@ -49,3 +49,8 @@ function hide_weather_days() {
 
 //esto inicia la cadena de funciones para que todo ande
 hide_weather_days();
+
+
+//------------api weather----------
+
+//http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid=dfdfb2c3fa71b76cebbe6111df779240

@@ -1,74 +1,74 @@
 [
     {
-        "name": "nombre",
-        "addresses": "address",
-        "phone_numbers": "1854845",
-        "website": "www.",
-        "img": "https",
-        "membership": "gold"
+        "name": "Hope and love",
+        "addresses": "Salt lake Street 35, Cordoba",
+        "phone_numbers": "091-456-321",
+        "website": "www.hopeandlove.com",
+        "img": "https://www.socialancer.com/wp-content/uploads/2022/03/logos-para-empresas.png",
+        "membership": "Gold"
     },
     {
-        "name": "nombre",
-        "addresses": "address",
-        "phone_numbers": "1854845",
-        "website": "www.",
-        "img": "https",
-        "membership": "gold"
+        "name": "Tata",
+        "addresses": "Roosevelt 1587, Buenos Aires",
+        "phone_numbers": "091-463-740",
+        "website": "www.tata.com",
+        "img": "https://static.wikia.nocookie.net/logopedia/images/3/36/Ta-ta.png/revision/latest?cb=20210315010958&path-prefix=es",
+        "membership": "Bronze"
     },
     {
-        "name": "nombre",
-        "addresses": "address",
-        "phone_numbers": "1854845",
-        "website": "www.",
-        "img": "https",
-        "membership": "gold"
+        "name": "Macromercado",
+        "addresses": "Diego Lamas 657, Buenos Aires",
+        "phone_numbers": "091-111-894",
+        "website": "www.macro.com.ar",
+        "img": "https://amu.org.uy/wp-content/uploads/2021/07/macromercado.jpg",
+        "membership": "Gold"
     },
     {
-        "name": "nombre",
-        "addresses": "address",
-        "phone_numbers": "1854845",
-        "website": "www.",
-        "img": "https",
-        "membership": "gold"
+        "name": "Wallmart",
+        "addresses": "Mar Chiquita 9, Maldonado",
+        "phone_numbers": "091-349-800",
+        "website": "www.wallmart.com",
+        "img": "https://www.pngitem.com/pimgs/m/108-1086611_walmart-foundation-logo-png-transparent-png.png",
+        "membership": "Bronze"
     },
     {
-        "name": "nombre",
-        "addresses": "address",
-        "phone_numbers": "1854845",
-        "website": "www.",
-        "img": "https",
-        "membership": "gold"
+        "name": "Zumo",
+        "addresses": "San Martin 3685, Buenos Aires",
+        "phone_numbers": "091-413-990",
+        "website": "www.zumo.com.ar",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Logo_de_Zump.png",
+        "membership": "Silver"
     },
     {
-        "name": "nombre",
-        "addresses": "address",
-        "phone_numbers": "1854845",
-        "website": "www.",
-        "img": "https",
-        "membership": "gold"
+        "name": "La Pasiva",
+        "addresses": "Gral. Artigas 587, Maldonado",
+        "phone_numbers": "091-789-111",
+        "website": "www.lapasiva.com",
+        "img": "https://www.lr21.com.uy/wp-content/uploads/2014/07/image_gallery.jpg",
+        "membership": "Silver"
     },
     {
-        "name": "nombre",
-        "addresses": "address",
-        "phone_numbers": "1854845",
-        "website": "www.",
-        "img": "https",
-        "membership": "gold"
+        "name": "Sol y Luna",
+        "addresses": "San Carlos 1819, Buenos Aires",
+        "phone_numbers": "091-888-192",
+        "website": "www.solyluna.com.ar",
+        "img": "https://w7.pngwing.com/pngs/140/543/png-transparent-logo-company-business-business-blue-angle-company.png",
+        "membership": "Bronze"
     },
     {
-        "name": "nombre",
-        "addresses": "address",
-        "phone_numbers": "1854845",
-        "website": "www.",
-        "img": "https",
-        "membership": "gold"
+        "name": "Bros Market",
+        "addresses": "Rodó 837, Buenos Aires",
+        "phone_numbers": "091-317-786",
+        "website": "www.brosmarket.com",
+        "img": "https://d500.epimg.net/cincodias/imagenes/2015/05/08/pyme/1431098283_691735_1431098420_noticia_normal.jpg",
+        "membership": "Gold"
     },
     {
-        "name": "nombre",
-        "addresses": "address",
-        "phone_numbers": "1854845",
-        "website": "www.",
-        "img": "https",
-        "membership": "gold"
+        "name": "Macri",
+        "addresses": "Gral. Rivera 1214, Buenos Aires",
+        "phone_numbers": "091-463-417",
+        "website": "www.macri.com",
+        "img": "https://www.trescruces.com.uy/wp-content/uploads/2017/07/macri-sports.png",
+        "membership": "Silver"
     }
 ]
