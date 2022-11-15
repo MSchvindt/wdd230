@@ -297,3 +297,125 @@
 #discover_main div:hover{
     font-weight: bold;
 }
+
+/*----------directory-----------*/
+
+#main_directory {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#main_directory {
+	margin: 0 auto;
+	border: 1px solid #bbb;
+	padding: 0.5rem;
+	max-width: 700px;
+	background-color: #eee;
+	font-family: "Caveat", cursive;
+}
+
+.menu_directory {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #bbb;
+	text-align: center;
+}
+
+.menu_directory button {
+	padding: 1rem;
+}
+
+.grid,
+section {
+	margin: 0.75rem;
+}
+
+section {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #ccc;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	align-items: center;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+}
+
+.list section {
+	display: flex;
+	align-items: center;
+}
+
+.grid section {
+	flex-direction: column;
+	text-align: center;
+}
+
+.grid section > * {
+	margin: 0.5rem;
+    margin-bottom: .5rem;
+}
+
+.list section {
+	flex-direction: row;
+	justify-content: left;
+}
+
+.list section > * {
+	margin: 0 .5rem;
+	text-align: left;
+    margin-right: .5rem;
+    
+}
+
+.list section img {
+	display: block; 
+}
+
+section h3 {
+	font-size: 1.5rem;
+}
+
+section a {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 0.9rem;
+}
+
+.img_directory {
+	height: 75px;
+	max-width: 100%; /* Images are jerks - Seattle*/
+}
+
+@media (min-width: 700px) {
+	.list section img {
+		display: block;
+	}
+}
+.active {
+    background-color: #00a231;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+    border-radius: 4px;
+}
+main article div img{
+    max-width: 250px;
+    margin: 50px;
+}
+main article div h2{
+    font-size: 1.5rem;
+    margin-left: auto;
+}
+main article div p{
+    font-size: 1rem;
+    float: right;
+    text-align: right;
+}

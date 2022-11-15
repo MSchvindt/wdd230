@@ -181,12 +181,15 @@ function displaybusiness(business) {
     let membership = document.createElement("p")
     let logo = document.createElement('img');
     logo.setAttribute('name', 'logo_business');
+    
+    
+
 
     name.textContent = `${business.name}`;
-    address.textContent = `Address: ${business.addresses}.`;
-    phone.textContent = `Phone Number: ${business.phone_numbers}.`;
-    web.textContent = `Web Page: ${business.website}.`;
-    membership.textContent = `Membership: ${business.embership}.`;
+    //address.textContent = `Address: ${business.addresses}.`;
+    //phone.textContent = `Phone Number: ${business.phone_numbers}.`;
+    //web.textContent = `Web Page: ${business.website}.`;
+    membership.textContent = `Membership: ${business.membership}.`;
     // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
     logo.setAttribute('src', business.img);
     logo.setAttribute('alt', `Logo of ${business.name}.`);

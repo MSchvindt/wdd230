@@ -548,6 +548,7 @@ section {
 
 .grid section > * {
 	margin: 0.1rem;
+    margin-bottom: .5rem;
 }
 
 .list section {
@@ -556,8 +557,10 @@ section {
 }
 
 .list section > * {
-	margin: 0 1rem;
+	margin: 0 .5rem;
 	text-align: left;
+    margin-right: .1rem;
+    
 }
 
 .list section img {
@@ -589,4 +592,17 @@ section a {
     font-weight: bold;
     transition: 0.5s;
     border-radius: 4px;
+}
+main article div img{
+    max-width: 250px;
+    margin: 50px;
+}
+main article div h2{
+    font-size: 1.5rem;
+    margin-left: auto;
+}
+main article div p{
+    font-size: 1rem;
+    float: right;
+    text-align: right;
 }
