@@ -418,7 +418,7 @@ section a {
 }
 .active {
     background-color: #00a231;
-    color: white;
+    color: black;
     font-weight: bold;
     transition: 0.5s;
     border-radius: 4px;
