@@ -1,13 +1,13 @@
 
 
 
-const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
+const options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' };
 document.getElementById('currentdate1').textContent = new Date().toLocaleDateString('en-US', options);
 document.getElementById('currentdate2').textContent = new Date().toLocaleDateString('en-US', options);
 
 
 
-function toggleMenu(){
+function toggleMenu() {
     document.getElementById("primaryNav").classList.toggle("open");
     document.getElementById("hamburgerBtn").classList.toggle("open");
 }
@@ -27,6 +27,7 @@ window.onresize = () => {
         mainnav.classList.remove('open');
     }
 };
+
 window.onload = function () {
     data();
 }
@@ -37,12 +38,12 @@ weekDay = currentDate.getDay();
 
 const banner_tag = document.getElementById("banner");
 
-function banner(weekDay){
-    if (weekDay == 1 || weekDay == 2){
+function banner(weekDay) {
+    if (weekDay == 1 || weekDay == 2) {
         banner_tag.style.display = "block";
     } else {
         banner_tag.style.display = "none";
-}
+    }
 }
 banner(weekDay);
 document.querySelector(".banner__close").addEventListener("click", function () {
@@ -61,7 +62,7 @@ const lsLastVisit = Number(window.localStorage.getItem("today_ls", timeNumber));
 if (lsLastVisit == 0) {
     console.log('first time');
     document.getElementById("last_visit").textContent = "Welcome, this is your first visit.";
-    
+
 } else {
     var convertNumber1 = new Date(lsLastVisit);
     var convertNumber2 = new Date(timeNumber);
@@ -77,9 +78,10 @@ if (lsLastVisit == 0) {
     if (diffDays == 0) {
         document.getElementById("last_visit").textContent = "Days since last visit: Today";
     }
-    else{
+    else {
         document.getElementById("last_visit").textContent = "Days since last visit: " + diffDays;
-}}
+    }
+}
 
 const ls_today = (window.localStorage.setItem("today_ls", timeNumber));
 
@@ -153,23 +155,76 @@ function change_active(btn) {
 
     btn.classList.add('active');
 
-    
+
 
 }
-getElementByTag
 
 function data() {
     fetch('https://mschvindt.github.io/wdd230/chamber/data.json')
         .then((response) => response.json())
         .then((json) => {
-            console.log(json);
-
             json.forEach(element => {
                 displaybusiness(element);
             });
+
+            displayCardHome(json);
         });
 }
 
+function displayCardHome(data) {
+    //en selected vamos a ir guardando los business que vamos a mostrar
+    let selected = [];
+
+    //c lo usamos para saber cual es la cantidad de DIVs que vamos a cargar, en este caso le ponemos 4 para que llegue hasta 3 que son los sp que tenemos
+    //de c tambien depende la cantidad de numeros random que se crean para asignarlos
+    let c = 1;
+
+    //mientras no superemos la cantidad de sp que tenemos
+    while (c < 4) {
+        //generamos un random para seleccionarlo en data
+        let rnd = Math.floor(Math.random() * data.length);
+
+        //si justo genera un numero que ya estaba en selected, generamos otro, hasta que no se repita ninguno
+        while (selected.includes(rnd)) {
+            rnd = Math.floor(Math.random() * data.length);
+        }
+
+        //guardamos el valor filtrado
+        selected.push(rnd);
+
+        //cambiamos de sp
+        c++;
+    }
+
+    //se usa para saber en que div vamos a asignar la card actual
+    let current_div = 1;
+
+    //para cada data[selected], generamos una card
+    selected.forEach(element => {
+        let card = document.createElement('section');
+
+        let name = document.createElement('h2');
+        name.textContent = `${data[element].name}`;
+
+        let membership = document.createElement("p");
+        membership.textContent = `Membership: ${data[element].membership}.`;
+
+        let logo = document.createElement('img');
+        logo.setAttribute('src', data[element].img);
+        logo.setAttribute('alt', `Logo of ${data[element].name}.`);
+        logo.setAttribute('loading', 'lazy');
+
+        card.appendChild(name);
+        card.appendChild(membership);
+        card.appendChild(logo);
+
+        //para el sp en el que estamos parados, le asignamos la card de selected
+        document.getElementById('sp' + current_div).appendChild(card);
+
+        //cambiamos de div
+        current_div++;
+    });
+}
 
 function displaybusiness(business) {
     // Create elements to add to the document
@@ -177,13 +232,10 @@ function displaybusiness(business) {
     let name = document.createElement('h2');
     let address = document.createElement("p");
     let phone = document.createElement("p")
-    let web = document.createElement("p")
+    let web = document.createElement("p");
     let membership = document.createElement("p")
     let logo = document.createElement('img');
     logo.setAttribute('name', 'logo_business');
-    
-    
-
 
     name.textContent = `${business.name}`;
     //address.textContent = `Address: ${business.addresses}.`;
@@ -202,5 +254,11 @@ function displaybusiness(business) {
     card.appendChild(membership);
     card.appendChild(logo);
 
-    document.querySelector('div.cards').appendChild(card);
+    try {
+        document.querySelector('div.cards').appendChild(card);
+    } catch (error) {
+
+    }
+
+
 }

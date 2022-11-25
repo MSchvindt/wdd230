@@ -176,11 +176,11 @@
         grid-row: 2/5;
         font-size: 2rem;
         background-color: rgb(220, 220, 196);
-        margin-top: 10px;
-        margin-bottom: 10px; 
+        margin-top: 5px;
+        margin-bottom: 5px; 
         border: 2px solid #9c9c9f;
-        padding: 10px;
-        padding-top: 10px;
+        padding: 5px;
+        padding-top: 5px;
         display: grid;
         grid-template-columns: 5% 1fr 5%;
         grid-template-rows: 5% 1fr 1fr 1fr 5%;
@@ -188,33 +188,55 @@
     #spotlight #sp1{
         grid-column: 2/3;
         grid-row: 2/3;
-        margin-top: 5px;
-        margin-bottom: 5px; 
+        margin-top: 2px;
+        margin-bottom: 2px; 
         margin-right: 0px;
         
         border: 2px solid #9c9c9f;
-        font-size: 24px;
+        font-size: 1rem;
     } 
     #spotlight #sp2{
         grid-column: 2/3;
         grid-row: 3/4;
-        margin-top: 5px;
-        margin-bottom: 5px; 
+        margin-top: 2px;
+        margin-bottom: 2px; 
         margin-left: 0px;
         
         border: 2px solid #9c9c9f;
-        font-size: 24px;
+        font-size: .8rem;
     } 
     #spotlight #sp3{
-        display: flex;
+        display: block;
         grid-column: 2/3;
         grid-row: 4/5;
-        margin-top: 5px;
-        margin-bottom: 5px; 
+        margin-top: 2px;
+        margin-bottom: 2px; 
         border: 2px solid #9c9c9f;
-        padding: 10px; 
-        font-size: 24px;       
+        padding: 2px; 
+        font-size: .8rem; 
+        
+            
     }
+    #spotlight div img{
+        width: 150px;
+           
+    }  
+        
+    
+    #spotlight div section{
+        background-color: transparent;
+        display: block;
+        margin: 5px;
+         
+    }
+    #spotlight div{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+    
+
     footer{
    
         grid-template-rows: 5% 1fr 5%;
