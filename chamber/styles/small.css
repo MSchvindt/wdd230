@@ -611,6 +611,10 @@ section a {
     transition: 0.5s;
     border-radius: 4px;
 }
+.active-page {
+    background-color: rgb(140, 188, 129);
+    color: black;
+}
 main article div img{
     max-width: 250px;
     margin: 50px;
