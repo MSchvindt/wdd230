@@ -165,6 +165,7 @@
         border-radius: 50px;
         margin-top: 30%;
         cursor: pointer;
+        color: black;
     }
 
     .join-chamber-section-btn:hover {
