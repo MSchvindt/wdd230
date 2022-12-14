@@ -1,0 +1,47 @@
+@media only screen and (min-width: 1024px) {
+    .card {
+        width: 42%;
+        display: inline-block;
+        margin-left: 50px !important;
+        transition: .5s;
+    }
+
+    .main-title {
+        float: left;
+        transition: .5s;
+        padding: 5px;
+        font-size: 2rem;
+    }
+
+    .fixed-banner {
+        width: 120px;
+        transition: .5s;
+    }
+
+    .fixed-banner:hover {
+        width: 260px;
+        transition: .5s;
+    }
+
+    .banner-img {
+        width: 240px;
+        height: 120px;
+        transition: .5s;
+    }
+
+    .fruits-btn {
+        width: 260px;
+        margin-left: -155px;
+        transition: .5s;
+    }
+
+    .footer-header {
+        font-size: large;
+        transition: .5s;
+    }
+
+    .footer-right a svg {
+        margin-top: 26px;
+        transition: .5s;
+    }
+}
