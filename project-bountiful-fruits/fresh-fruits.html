@@ -33,7 +33,7 @@
                     Bountiful Foods
                 </h2>
 
-               
+
             </div>
 
             <div class="nav-container" id="nav-container">
@@ -50,20 +50,20 @@
             <br>
             <form id="fresh-fruits-form">
                 <div class="row">
-                    <label class="form-label">First name (*)</label>
-                    <input type="text" class="form-control" required autocomplete="off" minlength="3"
+                    <label for='name'class="form-label">First name (*)</label>
+                    <input id='name' type="text" class="form-control" required autocomplete="off" minlength="3"
                         placeholder="Type your first name (*)">
                 </div>
 
                 <div class="row">
-                    <label class="form-label">Email (*)</label>
-                    <input type="email" class="form-control" required autocomplete="off" minlength="3"
+                    <label for='email'class="form-label">Email (*)</label>
+                    <input id='email' type="email" class="form-control" required autocomplete="off" minlength="3"
                         placeholder="Type your email (*)">
                 </div>
 
                 <div class="row">
-                    <label class="form-label">Phone</label>
-                    <input type="text" class="form-control" autocomplete="off" minlength="3"
+                    <label for='phone'class="form-label">Phone</label>
+                    <input id='phone' type="text" class="form-control" autocomplete="off" minlength="3"
                         placeholder="Type your phone">
                 </div>
 
@@ -79,8 +79,8 @@
                 <br>
 
                 <div class="row">
-                    <label class="form-label">Comments</label>
-                    <textarea class="form-control" placeholder="Type yours comments" rows="6"></textarea>
+                    <label for='comments'class="form-label">Comments</label>
+                    <textarea id='comments' class="form-control" placeholder="Type yours comments" rows="6"></textarea>
                 </div>
 
                 <button type="button" value="SEND" class="btnSubmit" id="btnSubmit" onclick="getFormData()">SEND
@@ -96,7 +96,7 @@
             </legend>
 
             <div id="selected-values-container">
-                
+
             </div>
         </fieldset>
     </main>
